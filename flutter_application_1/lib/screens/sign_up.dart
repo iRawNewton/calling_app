@@ -169,6 +169,7 @@ class _SignUpState extends State<SignUp> {
                           );
 
                           if (result) {
+                            // ignore: use_build_context_synchronously
                             await showDialog(
                                 context: context,
                                 builder: (ctx) {

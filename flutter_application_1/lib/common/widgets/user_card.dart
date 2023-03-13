@@ -64,11 +64,11 @@ class _UserCardState extends State<UserCard> {
             actionButton(false),
             // video call button
             actionButton(true),
-            ElevatedButton(
-                onPressed: () {
-                  print(widget.userModel.username);
-                },
-                child: Text('data')),
+            // ElevatedButton(
+            //     onPressed: () {
+            //       print(widget.userModel.username);
+            //     },
+            //     child: Text('data')),
           ],
         ),
       ),
@@ -79,9 +79,11 @@ class _UserCardState extends State<UserCard> {
       ZegoSendCallInvitationButton(
         isVideoCall: isVideo,
         resourceID: "zegouikit_call",
+        notificationTitle: 'Kyptronix LLP',
+        notificationMessage: 'Incoming Call',
         invitees: [
           ZegoUIKitUser(
-            id: 'jhon',
+            id: widget.userModel.username,
             name: widget.userModel.name,
           ),
         ],

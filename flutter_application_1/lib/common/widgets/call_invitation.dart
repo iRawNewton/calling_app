@@ -22,6 +22,8 @@ class CallInvitationPage extends StatelessWidget {
       userID: username,
       userName: username,
       plugins: [ZegoUIKitSignalingPlugin()],
+      ringtoneConfig: const ZegoRingtoneConfig(),
+      showDeclineButton: true,
       child: child,
     );
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../common/widgets/loading_holder.dart';
 import '../common/widgets/top_bar.dart';
-import 'package:flutter_application_1/main.dart';
 import 'package:flutter_application_1/screens/home.dart';
 import 'package:flutter_application_1/screens/sign_up.dart';
 import '../services/firebase_service.dart';
